@@ -1,0 +1,20 @@
+[
+    {
+        "ville": "Bordeaux",
+        "boutiqueCode": "4175",
+        "nomDuProduit": "chapeau",
+        "modele": "rose",
+        "recommandation": "original",
+        "image": "imageProduit.jpg",
+        "produitVerifie": "chapeau"
+    },
+    {
+        "ville": "Bordeaux",
+        "boutiqueCode": "8390",
+        "nomDuProduit": "baskets",
+        "modele": "noire",
+        "recommandation": "confortable",
+        "image": "",
+        "produitVerifie": "baskets"
+    }
+]

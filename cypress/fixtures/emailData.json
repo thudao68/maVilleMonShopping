@@ -1,0 +1,10 @@
+[
+    {
+        "email": "test",
+        "alerte": "\n        ×Close\n        translation missing: fr.activerecord.errors.models.user.attributes.email.invalid\n"
+    },
+    {
+        "email": "test@",
+        "alerte": "\n        ×Close\n        translation missing: fr.activerecord.errors.models.user.attributes.email.invalid\n"
+    }
+]

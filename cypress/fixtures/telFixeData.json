@@ -1,0 +1,10 @@
+[
+    {
+        "telephoneFixe": "05123",
+        "alerte2": "\n        ×Close\n        Numéro de téléphone fixe invalide\n"
+    },
+    {
+        "telephoneFixe": "0712345678",
+        "alerte2": "\n        ×Close\n        Utilisateur modifié avec succès\n"
+    }
+]

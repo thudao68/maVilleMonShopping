@@ -1,0 +1,14 @@
+[
+    {
+        "telephoneMobile": "0612",
+        "alerte1": "\n        ×Close\n        Numéro de téléphone portable invalide\n"
+    },
+    {
+        "telephoneMobile": "0312345678",
+        "alerte1": "\n        ×Close\n        Numéro de téléphone portable invalide\n"
+    },
+    {
+        "telephoneMobile": "0666666666",
+        "alerte1": "\n        ×Close\n        Utilisateur modifié avec succès\n"
+    }
+]
