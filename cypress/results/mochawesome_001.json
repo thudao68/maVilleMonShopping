@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-05T07:43:31.195Z",
+    "end": "2021-05-05T07:44:40.970Z",
+    "duration": 69775,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9891b346-300c-4aa1-be19-0a0a65c882b2",
+      "title": "",
+      "fullFile": "cypress/integration/2.1.mettreAJourInfos.spec.js",
+      "file": "cypress/integration/2.1.mettreAJourInfos.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04e77bb4-8a5f-46ce-9290-d719c9d4daf9",
+          "title": "Mettre à jour mes informations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Changer toutes les informations",
+              "fullTitle": "Mettre à jour mes informations Changer toutes les informations",
+              "timedOut": null,
+              "duration": 65938,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.contains('Mes informations').click({\n  multiple: true\n});\ncy.get('#user_firstname').clear().type('Manou');\ncy.get('#user_lastname').clear().type('Lepen'); // cy.get('#user_email').clear().type(testing@gmail.com)\ncy.get('#user_mobile_phone_number').clear().type('0612345678');\ncy.get('#user_landline_phone_number').clear().type('0512345678');\ncy.contains('Mettre à jour mes informations').click();\ncy.get('.alert').should('have.text', '\\n        ×Close\\n        Utilisateur modifié avec succès\\n');\ncy.get('#user_firstname').should('have.value', 'Manou');\ncy.get('#user_lastname').should('have.value', 'Lepen');\ncy.get('#user_mobile_phone_number').should('have.value', '0612345678');\ncy.get('#user_landline_phone_number').should('have.value', '0512345678');",
+              "err": {},
+              "uuid": "2e71928d-287b-4977-8e47-63645038b568",
+              "parentUUID": "04e77bb4-8a5f-46ce-9290-d719c9d4daf9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e71928d-287b-4977-8e47-63645038b568"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 65938,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

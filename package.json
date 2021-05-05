@@ -6,16 +6,16 @@
   "scripts": {
     "cy:run": "rimraf mochawesome-report cypress/results mochawesome.json && cypress run",
     "generateReport": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json && npx marge mochawesome.json",
-    "cy:run:report": "npm run cy:run && npm run generateReport"
+    "cy:run:report" : "npm run cy:run && npm run generateReport"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cypress": "^7.1.0",
     "rimraf": "^3.0.2"
   },
   "devDependencies": {
+    "cypress": "^7.1.0",
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0"

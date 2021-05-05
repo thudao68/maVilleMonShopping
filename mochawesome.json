@@ -1,0 +1,259 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-05T07:39:59.322Z",
+    "end": "2021-05-05T07:47:59.324Z",
+    "duration": 301294,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9891b346-300c-4aa1-be19-0a0a65c882b2",
+      "title": "",
+      "fullFile": "cypress/integration/2.1.mettreAJourInfos.spec.js",
+      "file": "cypress/integration/2.1.mettreAJourInfos.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "04e77bb4-8a5f-46ce-9290-d719c9d4daf9",
+          "title": "Mettre à jour mes informations",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Changer toutes les informations",
+              "fullTitle": "Mettre à jour mes informations Changer toutes les informations",
+              "timedOut": null,
+              "duration": 65938,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.contains('Mes informations').click({\n  multiple: true\n});\ncy.get('#user_firstname').clear().type('Manou');\ncy.get('#user_lastname').clear().type('Lepen'); // cy.get('#user_email').clear().type(testing@gmail.com)\ncy.get('#user_mobile_phone_number').clear().type('0612345678');\ncy.get('#user_landline_phone_number').clear().type('0512345678');\ncy.contains('Mettre à jour mes informations').click();\ncy.get('.alert').should('have.text', '\\n        ×Close\\n        Utilisateur modifié avec succès\\n');\ncy.get('#user_firstname').should('have.value', 'Manou');\ncy.get('#user_lastname').should('have.value', 'Lepen');\ncy.get('#user_mobile_phone_number').should('have.value', '0612345678');\ncy.get('#user_landline_phone_number').should('have.value', '0512345678');",
+              "err": {},
+              "uuid": "2e71928d-287b-4977-8e47-63645038b568",
+              "parentUUID": "04e77bb4-8a5f-46ce-9290-d719c9d4daf9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2e71928d-287b-4977-8e47-63645038b568"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 65938,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "696b9d42-e24f-4be9-8c5c-3ecc4ba05287",
+      "title": "",
+      "fullFile": "cypress/integration/2.2.syntax.spec.js",
+      "file": "cypress/integration/2.2.syntax.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1edc11cd-0cbe-4158-818c-489ec1d707c4",
+          "title": "Syntax des champs importants",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tester le syntax de email test",
+              "fullTitle": "Syntax des champs importants Tester le syntax de email test",
+              "timedOut": null,
+              "duration": 52015,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.contains('Mes informations').click({\n  multiple: true\n});\ncy.syntaxEmail(modifierEmail.email, modifierEmail.alerte);",
+              "err": {},
+              "uuid": "d10dc4fa-9525-40a5-be22-6cd811734f63",
+              "parentUUID": "1edc11cd-0cbe-4158-818c-489ec1d707c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tester le syntax de email test@",
+              "fullTitle": "Syntax des champs importants Tester le syntax de email test@",
+              "timedOut": null,
+              "duration": 49624,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.contains('Mes informations').click({\n  multiple: true\n});\ncy.syntaxEmail(modifierEmail.email, modifierEmail.alerte);",
+              "err": {},
+              "uuid": "a8706b02-d3a1-45f6-878c-822c07c61681",
+              "parentUUID": "1edc11cd-0cbe-4158-818c-489ec1d707c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d10dc4fa-9525-40a5-be22-6cd811734f63",
+            "a8706b02-d3a1-45f6-878c-822c07c61681"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 101639,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cad1ef8f-1c36-4267-b06e-6c0b23ca4c6a",
+      "title": "",
+      "fullFile": "cypress/integration/1.partagerUnProduit.spec.js",
+      "file": "cypress/integration/1.partagerUnProduit.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f2aa979a-4641-48e2-9ce9-aa966e1534e6",
+          "title": "Partager un produit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Partager le produit chapeau",
+              "fullTitle": "Partager un produit Partager le produit chapeau",
+              "timedOut": null,
+              "duration": 70065,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.partagerUnProduit(partage.ville, partage.boutiqueCode, partage.nomDuProduit, partage.modele, partage.recommandation, partage.image, partage.produitVerifie);",
+              "err": {},
+              "uuid": "f15ef83a-0343-46cc-927d-77ff68315f84",
+              "parentUUID": "f2aa979a-4641-48e2-9ce9-aa966e1534e6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Partager le produit baskets",
+              "fullTitle": "Partager un produit Partager le produit baskets",
+              "timedOut": null,
+              "duration": 63652,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.partagerUnProduit(partage.ville, partage.boutiqueCode, partage.nomDuProduit, partage.modele, partage.recommandation, partage.image, partage.produitVerifie);",
+              "err": {},
+              "uuid": "64630899-61f9-416d-9779-c754155a8a89",
+              "parentUUID": "f2aa979a-4641-48e2-9ce9-aa966e1534e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f15ef83a-0343-46cc-927d-77ff68315f84",
+            "64630899-61f9-416d-9779-c754155a8a89"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 133717,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

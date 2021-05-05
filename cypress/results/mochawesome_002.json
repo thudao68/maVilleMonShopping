@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-05T07:45:20.070Z",
+    "end": "2021-05-05T07:47:04.565Z",
+    "duration": 104495,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "696b9d42-e24f-4be9-8c5c-3ecc4ba05287",
+      "title": "",
+      "fullFile": "cypress/integration/2.2.syntax.spec.js",
+      "file": "cypress/integration/2.2.syntax.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1edc11cd-0cbe-4158-818c-489ec1d707c4",
+          "title": "Syntax des champs importants",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Tester le syntax de email test",
+              "fullTitle": "Syntax des champs importants Tester le syntax de email test",
+              "timedOut": null,
+              "duration": 52015,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.contains('Mes informations').click({\n  multiple: true\n});\ncy.syntaxEmail(modifierEmail.email, modifierEmail.alerte);",
+              "err": {},
+              "uuid": "d10dc4fa-9525-40a5-be22-6cd811734f63",
+              "parentUUID": "1edc11cd-0cbe-4158-818c-489ec1d707c4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tester le syntax de email test@",
+              "fullTitle": "Syntax des champs importants Tester le syntax de email test@",
+              "timedOut": null,
+              "duration": 49624,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.contains('Mes informations').click({\n  multiple: true\n});\ncy.syntaxEmail(modifierEmail.email, modifierEmail.alerte);",
+              "err": {},
+              "uuid": "a8706b02-d3a1-45f6-878c-822c07c61681",
+              "parentUUID": "1edc11cd-0cbe-4158-818c-489ec1d707c4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d10dc4fa-9525-40a5-be22-6cd811734f63",
+            "a8706b02-d3a1-45f6-878c-822c07c61681"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 101639,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

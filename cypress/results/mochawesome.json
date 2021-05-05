@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-05T07:39:59.322Z",
+    "end": "2021-05-05T07:42:18.218Z",
+    "duration": 138896,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cad1ef8f-1c36-4267-b06e-6c0b23ca4c6a",
+      "title": "",
+      "fullFile": "cypress/integration/1.partagerUnProduit.spec.js",
+      "file": "cypress/integration/1.partagerUnProduit.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f2aa979a-4641-48e2-9ce9-aa966e1534e6",
+          "title": "Partager un produit",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Partager le produit chapeau",
+              "fullTitle": "Partager un produit Partager le produit chapeau",
+              "timedOut": null,
+              "duration": 70065,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.partagerUnProduit(partage.ville, partage.boutiqueCode, partage.nomDuProduit, partage.modele, partage.recommandation, partage.image, partage.produitVerifie);",
+              "err": {},
+              "uuid": "f15ef83a-0343-46cc-927d-77ff68315f84",
+              "parentUUID": "f2aa979a-4641-48e2-9ce9-aa966e1534e6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Partager le produit baskets",
+              "fullTitle": "Partager un produit Partager le produit baskets",
+              "timedOut": null,
+              "duration": 63652,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "etapesInitiales.seConnecter();\netapesInitiales.monCompte();\ncy.partagerUnProduit(partage.ville, partage.boutiqueCode, partage.nomDuProduit, partage.modele, partage.recommandation, partage.image, partage.produitVerifie);",
+              "err": {},
+              "uuid": "64630899-61f9-416d-9779-c754155a8a89",
+              "parentUUID": "f2aa979a-4641-48e2-9ce9-aa966e1534e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f15ef83a-0343-46cc-927d-77ff68315f84",
+            "64630899-61f9-416d-9779-c754155a8a89"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 133717,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

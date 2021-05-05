@@ -15,7 +15,7 @@ describe('Syntax des champs importants', () => {
         })
     })
 
-    modifierTelMobiles.forEach((modifierTelMobile) => {
+    /*modifierTelMobiles.forEach((modifierTelMobile) => {
         it(`Tester le syntax de téléphone mobile ${modifierTelMobile.telephoneMobile}`, () => {
             etapesInitiales.seConnecter()
             etapesInitiales.monCompte()
@@ -31,5 +31,5 @@ describe('Syntax des champs importants', () => {
             cy.contains('Mes informations').click({ multiple: true })
             cy.syntaxTelephoneFixe(modifierTelFixe.telephoneFixe, modifierTelFixe.alerte2)
         })
-    })
+    })*/
 })

@@ -1,5 +1,4 @@
-import { it } from 'mocha'
-import * as etapesInitiales from '../actions/etapesInitiales'
+/*import * as etapesInitiales from '../actions/etapesInitiales'
 
 describe('Mot de passe', () => {
 
@@ -16,4 +15,4 @@ describe('Mot de passe', () => {
         cy.contains('CONNEXION').should('be.visible')
         cy.get('.alert').should('have.text', "\n        ×Close\n        Votre compte a été modifié avec succès.\n")
     })
-})
+})*/

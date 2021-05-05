@@ -19,7 +19,7 @@ describe('Mettre à jour mes informations', () => {
         cy.get('#user_landline_phone_number').should('have.value', '0512345678')
     })
 
-    it('Changer une des informations', () => {
+    /*it('Changer une des informations', () => {
         etapesInitiales.seConnecter()
         etapesInitiales.monCompte()
         cy.contains('Mes informations').click({ multiple: true })
@@ -28,6 +28,6 @@ describe('Mettre à jour mes informations', () => {
         cy.get('.alert').should('have.text', '\n        ×Close\n        Utilisateur modifié avec succès\n')
         cy.get('#user_firstname').should('have.value', 'Manou')
         cy.get('#user_lastname').should('have.value', 'Lepen')
-    })
+    })*/
      
 })
